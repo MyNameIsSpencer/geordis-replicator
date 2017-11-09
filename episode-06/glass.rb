@@ -1,3 +1,4 @@
+require 'pry'
 # The Glass is where the ingredients will go and what's
 # transported around the ship as the drink is made.
 # When this is instatiated, it should set its temperature
@@ -28,7 +29,6 @@ class Glass
   def ingredients
     @inside.contents.map { |item| item.name }
   end
-
   # These methods are used by the main geordis-replicator.rb
   # program to see if the drink was correctly replicated.
   # When the Validator.new is run, @errors is populated with

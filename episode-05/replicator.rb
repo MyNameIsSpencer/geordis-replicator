@@ -1,3 +1,5 @@
+require 'pry'
+
 class Replicator
 
   # When the Enterprise calls Replicator.new, this method executes.
@@ -30,9 +32,9 @@ class Replicator
     # In Ruby, nil and false are "falsey" and everything else is a "truthy",
     # including the number 0, empty arrays, and anything else (strings, classes, instances, etc.).
     # This should report back a "truthy" for the power to work.
+
     @power = @enterprise.reactor.on
   end
-
   # After the Enterprise is put together, this is the
   # key method responsible for creating the drink.
   # This is where your pry debugging should begin.
@@ -165,7 +167,6 @@ class Replicator
       number_of_adjustments += 1
 
     end
-
     # Transport glass from reactor back to inside the replicator.
     # If successful, @enterprise.reactor.core will now be empty
     # and @inside_replicator will once again contain the glass.
@@ -194,6 +195,7 @@ class Replicator
       glass_inside_replicator,
       @inside_replicator,
       @plate
+
     )
   end
 

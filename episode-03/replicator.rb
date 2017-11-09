@@ -1,3 +1,5 @@
+require 'pry'
+
 class Replicator
 
   # When the Enterprise calls Replicator.new, this method executes.
@@ -40,7 +42,7 @@ class Replicator
   # and then manually execute each method to ensure
   # it returns what's expect.
   def replicate(recipe)
-
+# binding pry
     # Setup an instance variable for the recipe
     # so that other methods can see what the recipe is
     @recipe = recipe
@@ -101,6 +103,7 @@ class Replicator
     # and obtains the first element of that array.
     @inside_replicator.contents.first
   end
+
 
   # This transports ingredients into the glass.
   def transport_ingredients_to_glass
