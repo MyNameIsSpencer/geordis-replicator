@@ -104,7 +104,6 @@ class Replicator
 
   # This transports ingredients into the glass.
   def transport_ingredients_to_glass
-
     # Abort if there is no glass inside the replicator.
     return unless glass_inside_replicator
 
@@ -136,6 +135,7 @@ class Replicator
   def adjust_temperature
 
     # Abort if there is no glass inside the replicator.
+
     return unless glass_inside_replicator
 
     # Transport glass to the reactor where the temperature adjustment will take place.
@@ -169,7 +169,7 @@ class Replicator
     # Transport glass from reactor back to inside the replicator.
     # If successful, @enterprise.reactor.core will now be empty
     # and @inside_replicator will once again contain the glass.
-    # transport_glass_from_reactor
+    transport_glass_from_reactor
 
   end
 
