@@ -1,3 +1,5 @@
+require 'pry'
+
 class Replicator
 
   # When the Enterprise calls Replicator.new, this method executes.
@@ -12,7 +14,6 @@ class Replicator
     # Setup the outside of the replicator. This is where the
     # final drink should end up for the character to consume.
     @plate = Location.new
-
     # Setup the power for the replicator.
     @power = false
 

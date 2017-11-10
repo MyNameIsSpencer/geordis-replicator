@@ -1,3 +1,5 @@
+require 'pry'
+
 class Replicator
 
   # When the Enterprise calls Replicator.new, this method executes.
@@ -50,7 +52,6 @@ class Replicator
     # transported and @inside_replicator will contain the glass
     # in its contents.
     retrieve_glass
-
     # Setup an instance variable to access the glass.
     @glass = @inside_replicator.contents.first
 
@@ -68,7 +69,7 @@ class Replicator
 
     # This methods mixes the ingredients in the glass around.
     # It returns nil, even if successful, but if you look at:
-    #   glass_inside_replicator.inside.contents
+    #  glass_inside_replicator.inside.contents
     # then you may find the ingredients order has changed.
     # If it's successful, all the ingredients should still be in the glass.
     mix

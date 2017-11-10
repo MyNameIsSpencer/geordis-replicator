@@ -12,7 +12,7 @@ class Ingredient
       end
     other_ingredients = ['banana', 'apple', 'orange']
 
-    [episode_recipe_ingredients + other_ingredients].flatten.uniq
+    [episode_recipe_ingredients].flatten.uniq
   end
 
   def initialize(name)
